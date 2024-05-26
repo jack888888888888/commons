@@ -5,7 +5,7 @@ import com.medicine.common.utils.StringUtils;
 
 /**
  * 基础异常
- *
+ * 
  * @author medicine
  */
 public class BaseException extends RuntimeException

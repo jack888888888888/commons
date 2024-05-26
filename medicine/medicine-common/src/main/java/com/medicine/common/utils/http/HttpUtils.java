@@ -24,7 +24,7 @@ import com.medicine.common.utils.StringUtils;
 
 /**
  * 通用http发送方法
- *
+ * 
  * @author medicine
  */
 public class HttpUtils

@@ -4,7 +4,7 @@ import com.medicine.common.utils.Arith;
 
 /**
  * 內存相关信息
- *
+ * 
  * @author medicine
  */
 public class Mem

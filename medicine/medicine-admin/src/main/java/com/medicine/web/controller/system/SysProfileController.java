@@ -1,6 +1,5 @@
 package com.medicine.web.controller.system;
 
-import com.medicine.common.config.MedicineConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import com.medicine.common.annotation.Log;
+import com.medicine.common.config.RuoYiConfig;
 import com.medicine.common.core.controller.BaseController;
 import com.medicine.common.core.domain.AjaxResult;
 import com.medicine.common.core.domain.entity.SysUser;
@@ -25,7 +25,7 @@ import com.medicine.system.service.ISysUserService;
 
 /**
  * 个人信息 业务处理
- *
+ * 
  * @author medicine
  */
 @RestController
@@ -121,7 +121,7 @@ public class SysProfileController extends BaseController
         if (!file.isEmpty())
         {
             LoginUser loginUser = getLoginUser();
-            String avatar = FileUploadUtils.upload(MedicineConfig.getAvatarPath(), file, MimeTypeUtils.IMAGE_EXTENSION);
+            String avatar = FileUploadUtils.upload(RuoYiConfig.getAvatarPath(), file, MimeTypeUtils.IMAGE_EXTENSION);
             if (userService.updateUserAvatar(loginUser.getUsername(), avatar))
             {
                 AjaxResult ajax = AjaxResult.success();

@@ -14,7 +14,7 @@ import com.medicine.common.xss.Xss;
 
 /**
  * 用户对象 sys_user
- *
+ * 
  * @author medicine
  */
 public class SysUser extends BaseEntity

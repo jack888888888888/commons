@@ -2,7 +2,7 @@ package com.medicine.common.constant;
 
 /**
  * 代码生成通用常量
- *
+ * 
  * @author medicine
  */
 public class GenConstants

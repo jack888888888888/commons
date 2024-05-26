@@ -9,7 +9,7 @@ import com.medicine.common.core.domain.entity.SysMenu;
 
 /**
  * Treeselect树结构实体类
- *
+ * 
  * @author medicine
  */
 public class TreeSelect implements Serializable

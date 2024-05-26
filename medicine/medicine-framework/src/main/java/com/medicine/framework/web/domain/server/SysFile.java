@@ -2,7 +2,7 @@ package com.medicine.framework.web.domain.server;
 
 /**
  * 系统文件相关信息
- *
+ * 
  * @author medicine
  */
 public class SysFile

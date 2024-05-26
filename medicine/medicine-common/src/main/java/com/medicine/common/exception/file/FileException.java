@@ -4,7 +4,7 @@ import com.medicine.common.exception.base.BaseException;
 
 /**
  * 文件信息异常类
- *
+ * 
  * @author medicine
  */
 public class FileException extends BaseException

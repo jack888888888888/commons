@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.medicine.common.config.MedicineConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import com.medicine.common.config.RuoYiConfig;
 import com.medicine.common.constant.Constants;
 import com.medicine.common.core.domain.AjaxResult;
 import com.medicine.common.utils.StringUtils;
@@ -24,7 +23,7 @@ import com.medicine.framework.config.ServerConfig;
 
 /**
  * 通用请求处理
- *
+ * 
  * @author medicine
  */
 @RestController
@@ -40,7 +39,7 @@ public class CommonController
 
     /**
      * 通用下载请求
-     *
+     * 
      * @param fileName 文件名称
      * @param delete 是否删除
      */
@@ -54,7 +53,7 @@ public class CommonController
                 throw new Exception(StringUtils.format("文件名称({})非法，不允许下载。 ", fileName));
             }
             String realFileName = System.currentTimeMillis() + fileName.substring(fileName.indexOf("_") + 1);
-            String filePath = MedicineConfig.getDownloadPath() + fileName;
+            String filePath = RuoYiConfig.getDownloadPath() + fileName;
 
             response.setContentType(MediaType.APPLICATION_OCTET_STREAM_VALUE);
             FileUtils.setAttachmentResponseHeader(response, realFileName);
@@ -79,7 +78,7 @@ public class CommonController
         try
         {
             // 上传文件路径
-            String filePath = MedicineConfig.getUploadPath();
+            String filePath = RuoYiConfig.getUploadPath();
             // 上传并返回新文件名称
             String fileName = FileUploadUtils.upload(filePath, file);
             String url = serverConfig.getUrl() + fileName;
@@ -105,7 +104,7 @@ public class CommonController
         try
         {
             // 上传文件路径
-            String filePath = MedicineConfig.getUploadPath();
+            String filePath = RuoYiConfig.getUploadPath();
             List<String> urls = new ArrayList<String>();
             List<String> fileNames = new ArrayList<String>();
             List<String> newFileNames = new ArrayList<String>();
@@ -147,7 +146,7 @@ public class CommonController
                 throw new Exception(StringUtils.format("资源文件({})非法，不允许下载。 ", resource));
             }
             // 本地资源路径
-            String localPath = MedicineConfig.getProfile();
+            String localPath = RuoYiConfig.getProfile();
             // 数据库资源地址
             String downloadPath = localPath + StringUtils.substringAfter(resource, Constants.RESOURCE_PREFIX);
             // 下载名称

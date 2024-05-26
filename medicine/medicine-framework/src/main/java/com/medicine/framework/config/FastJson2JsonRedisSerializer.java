@@ -11,7 +11,7 @@ import com.medicine.common.constant.Constants;
 
 /**
  * Redis使用FastJson序列化
- *
+ * 
  * @author medicine
  */
 public class FastJson2JsonRedisSerializer<T> implements RedisSerializer<T>

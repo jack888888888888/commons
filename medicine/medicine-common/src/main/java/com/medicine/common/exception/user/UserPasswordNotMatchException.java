@@ -2,7 +2,7 @@ package com.medicine.common.exception.user;
 
 /**
  * 用户密码不正确或不符合规范异常类
- *
+ * 
  * @author medicine
  */
 public class UserPasswordNotMatchException extends UserException

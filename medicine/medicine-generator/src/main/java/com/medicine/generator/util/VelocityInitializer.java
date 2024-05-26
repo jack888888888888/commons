@@ -6,7 +6,7 @@ import com.medicine.common.constant.Constants;
 
 /**
  * VelocityEngine工厂
- *
+ * 
  * @author medicine
  */
 public class VelocityInitializer

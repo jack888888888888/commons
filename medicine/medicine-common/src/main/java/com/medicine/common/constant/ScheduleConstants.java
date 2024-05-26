@@ -2,7 +2,7 @@ package com.medicine.common.constant;
 
 /**
  * 任务调度通用常量
- *
+ * 
  * @author medicine
  */
 public class ScheduleConstants

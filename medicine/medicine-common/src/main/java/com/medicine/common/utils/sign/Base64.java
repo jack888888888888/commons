@@ -2,7 +2,7 @@ package com.medicine.common.utils.sign;
 
 /**
  * Base64工具类
- *
+ * 
  * @author medicine
  */
 public final class Base64

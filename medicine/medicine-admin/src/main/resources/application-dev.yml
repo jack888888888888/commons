@@ -38,7 +38,7 @@ spring:
     # redis 配置
     redis:
         # 地址
-        host: localhost
+        host: 175.178.8.82
         # 端口，默认为6379
         port: 6379
         # 数据库索引
@@ -63,8 +63,8 @@ spring:
         druid:
             # 主库数据源
             master:
-                url: jdbc:mysql://localhost:3306/medicine?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
-                username: root
+                url: jdbc:mysql://175.178.8.82:3306/medicine?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+                username: medicine
                 password: 1234
             # 从库数据源
             slave:
@@ -119,7 +119,7 @@ spring:
 # 开发环境配置
 server:
     # 服务器的HTTP端口，默认为8080
-    port: 8080
+    port: 88
     servlet:
         # 应用的访问路径
         context-path: /
@@ -156,7 +156,7 @@ mybatis:
     mapperLocations: classpath*:mapper/**/*Mapper.xml
     # 加载全局的配置文件
     configLocation: classpath:mybatis/mybatis-config.xml
- #MyBatis Plus配置
+    #MyBatis Plus配置
 mybatis-plus:
     # 搜索指定包别名
     typeAliasesPackage: com.medicine.**.domain

@@ -2,7 +2,7 @@ package com.medicine.common.exception.user;
 
 /**
  * 用户不存在异常类
- *
+ * 
  * @author medicine
  */
 public class UserNotExistsException extends UserException

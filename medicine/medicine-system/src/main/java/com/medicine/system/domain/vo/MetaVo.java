@@ -4,7 +4,7 @@ import com.medicine.common.utils.StringUtils;
 
 /**
  * 路由显示信息
- *
+ * 
  * @author medicine
  */
 public class MetaVo

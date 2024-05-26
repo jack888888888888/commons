@@ -2,7 +2,7 @@ package com.medicine.common.enums;
 
 /**
  * 操作人类别
- *
+ * 
  * @author medicine
  */
 public enum OperatorType

@@ -2,7 +2,7 @@ package com.medicine.common.constant;
 
 /**
  * 缓存的key 常量
- *
+ * 
  * @author medicine
  */
 public class CacheConstants

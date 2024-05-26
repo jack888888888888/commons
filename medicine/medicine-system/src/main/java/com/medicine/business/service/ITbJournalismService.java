@@ -1,19 +1,20 @@
 package com.medicine.business.service;
 
-import java.util.List;
 import com.medicine.business.domain.TbJournalism;
+
+import java.util.List;
 
 /**
  * 新闻Service接口
- * 
+ *
  * @author medicine
- * @date 2024-04-27
+ * @date 2024-05-26
  */
-public interface ITbJournalismService 
+public interface ITbJournalismService
 {
     /**
      * 查询新闻
-     * 
+     *
      * @param id 新闻主键
      * @return 新闻
      */
@@ -21,7 +22,7 @@ public interface ITbJournalismService
 
     /**
      * 查询新闻列表
-     * 
+     *
      * @param tbJournalism 新闻
      * @return 新闻集合
      */
@@ -29,7 +30,7 @@ public interface ITbJournalismService
 
     /**
      * 新增新闻
-     * 
+     *
      * @param tbJournalism 新闻
      * @return 结果
      */
@@ -37,7 +38,7 @@ public interface ITbJournalismService
 
     /**
      * 修改新闻
-     * 
+     *
      * @param tbJournalism 新闻
      * @return 结果
      */
@@ -45,7 +46,7 @@ public interface ITbJournalismService
 
     /**
      * 批量删除新闻
-     * 
+     *
      * @param ids 需要删除的新闻主键集合
      * @return 结果
      */
@@ -53,7 +54,7 @@ public interface ITbJournalismService
 
     /**
      * 删除新闻信息
-     * 
+     *
      * @param id 新闻主键
      * @return 结果
      */

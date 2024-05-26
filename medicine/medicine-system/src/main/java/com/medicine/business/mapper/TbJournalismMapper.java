@@ -1,19 +1,16 @@
 package com.medicine.business.mapper;
 
-import java.util.List;
-
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.medicine.business.domain.TbJournalism;
-import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
 
 /**
  * 新闻Mapper接口
  *
  * @author medicine
- * @date 2024-04-27
+ * @date 2024-05-26
  */
-@Mapper
-public interface TbJournalismMapper extends BaseMapper<TbJournalism>
+public interface TbJournalismMapper
 {
     /**
      * 查询新闻

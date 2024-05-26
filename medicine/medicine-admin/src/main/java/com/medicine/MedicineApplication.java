@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 /**
  * 启动程序
- *
+ * 
  * @author medicine
  */
 @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
@@ -16,7 +16,7 @@ public class MedicineApplication
     {
         // System.setProperty("spring.devtools.restart.enabled", "false");
         SpringApplication.run(MedicineApplication.class, args);
-        System.out.println("(♥◠‿◠)ﾉﾞ  Medicine启动成功   ლ(´ڡ`ლ)ﾞ  \n" +
+        System.out.println("(♥◠‿◠)ﾉﾞ  若依启动成功   ლ(´ڡ`ლ)ﾞ  \n" +
                 " .-------.       ____     __        \n" +
                 " |  _ _   \\      \\   \\   /  /    \n" +
                 " | ( ' )  |       \\  _. /  '       \n" +

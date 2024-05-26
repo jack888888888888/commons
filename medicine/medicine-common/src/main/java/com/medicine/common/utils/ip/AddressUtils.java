@@ -1,17 +1,17 @@
 package com.medicine.common.utils.ip;
 
-import com.medicine.common.config.MedicineConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONObject;
+import com.medicine.common.config.RuoYiConfig;
 import com.medicine.common.constant.Constants;
 import com.medicine.common.utils.StringUtils;
 import com.medicine.common.utils.http.HttpUtils;
 
 /**
  * 获取地址类
- *
+ * 
  * @author medicine
  */
 public class AddressUtils
@@ -31,7 +31,7 @@ public class AddressUtils
         {
             return "内网IP";
         }
-        if (MedicineConfig.isAddressEnabled())
+        if (RuoYiConfig.isAddressEnabled())
         {
             try
             {

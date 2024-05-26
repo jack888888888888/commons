@@ -1,9 +1,9 @@
 package com.medicine.web.controller.system;
 
-import com.medicine.common.config.MedicineConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.medicine.common.config.RuoYiConfig;
 import com.medicine.common.utils.StringUtils;
 
 /**
@@ -16,7 +16,7 @@ public class SysIndexController
 {
     /** 系统基础配置 */
     @Autowired
-    private MedicineConfig medicineConfig;
+    private RuoYiConfig medicineConfig;
 
     /**
      * 访问首页，提示语

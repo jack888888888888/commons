@@ -2,7 +2,7 @@ Application Version: ${medicine.version}
 Spring Boot Version: ${spring-boot.version}
 ////////////////////////////////////////////////////////////////////
 //                          _ooOoo_                               //
-//                         o6666666o                              //
+//                         o8888888o                              //
 //                         88" . "88                              //
 //                         (| ^_^ |)                              //
 //                         O\  =  /O                              //

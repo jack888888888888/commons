@@ -7,7 +7,7 @@ import com.medicine.common.utils.sql.SqlUtil;
 
 /**
  * 分页工具类
- *
+ * 
  * @author medicine
  */
 public class PageUtils extends PageHelper

@@ -6,13 +6,12 @@ import java.util.concurrent.TimeUnit;
 import javax.annotation.Resource;
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
-
-import com.medicine.common.config.MedicineConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.FastByteArrayOutputStream;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.google.code.kaptcha.Producer;
+import com.medicine.common.config.RuoYiConfig;
 import com.medicine.common.constant.CacheConstants;
 import com.medicine.common.constant.Constants;
 import com.medicine.common.core.domain.AjaxResult;
@@ -23,7 +22,7 @@ import com.medicine.system.service.ISysConfigService;
 
 /**
  * 验证码操作处理
- *
+ * 
  * @author medicine
  */
 @RestController
@@ -37,7 +36,7 @@ public class CaptchaController
 
     @Autowired
     private RedisCache redisCache;
-
+    
     @Autowired
     private ISysConfigService configService;
     /**
@@ -62,7 +61,7 @@ public class CaptchaController
         BufferedImage image = null;
 
         // 生成验证码
-        String captchaType = MedicineConfig.getCaptchaType();
+        String captchaType = RuoYiConfig.getCaptchaType();
         if ("math".equals(captchaType))
         {
             String capText = captchaProducerMath.createText();

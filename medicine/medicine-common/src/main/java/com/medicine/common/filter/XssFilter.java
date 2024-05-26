@@ -16,7 +16,7 @@ import com.medicine.common.enums.HttpMethod;
 
 /**
  * 防止XSS攻击的过滤器
- *
+ * 
  * @author medicine
  */
 public class XssFilter implements Filter

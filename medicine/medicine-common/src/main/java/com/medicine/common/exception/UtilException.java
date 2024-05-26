@@ -2,7 +2,7 @@ package com.medicine.common.exception;
 
 /**
  * 工具类异常
- *
+ * 
  * @author medicine
  */
 public class UtilException extends RuntimeException

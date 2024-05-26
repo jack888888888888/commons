@@ -2,7 +2,7 @@ package com.medicine.common.exception.user;
 
 /**
  * 黑名单IP异常类
- *
+ * 
  * @author medicine
  */
 public class BlackListException extends UserException

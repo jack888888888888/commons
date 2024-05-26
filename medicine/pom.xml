@@ -177,7 +177,6 @@
 
     <modules>
         <module>medicine-admin</module>
-        <module>medicine-app</module>
         <module>medicine-framework</module>
         <module>medicine-system</module>
         <module>medicine-quartz</module>

@@ -6,11 +6,10 @@ import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Arrays;
-
-import com.medicine.common.config.MedicineConfig;
 import org.apache.poi.util.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.medicine.common.config.RuoYiConfig;
 import com.medicine.common.constant.Constants;
 import com.medicine.common.utils.StringUtils;
 
@@ -58,7 +57,7 @@ public class ImageUtils
 
     /**
      * 读取文件为字节数据
-     *
+     * 
      * @param url 地址
      * @return 字节数据
      */
@@ -80,7 +79,7 @@ public class ImageUtils
             else
             {
                 // 本机地址
-                String localPath = MedicineConfig.getProfile();
+                String localPath = RuoYiConfig.getProfile();
                 String downloadPath = localPath + StringUtils.substringAfter(url, Constants.RESOURCE_PREFIX);
                 in = new FileInputStream(downloadPath);
             }

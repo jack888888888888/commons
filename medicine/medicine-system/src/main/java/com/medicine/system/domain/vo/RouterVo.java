@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * 路由配置信息
- *
+ * 
  * @author medicine
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
@@ -126,12 +126,12 @@ public class RouterVo
         this.alwaysShow = alwaysShow;
     }
 
-    public com.medicine.system.domain.vo.MetaVo getMeta()
+    public MetaVo getMeta()
     {
         return meta;
     }
 
-    public void setMeta(com.medicine.system.domain.vo.MetaVo meta)
+    public void setMeta(MetaVo meta)
     {
         this.meta = meta;
     }

@@ -2,7 +2,7 @@ package com.medicine.common.constant;
 
 /**
  * 返回状态码
- *
+ * 
  * @author medicine
  */
 public class HttpStatus

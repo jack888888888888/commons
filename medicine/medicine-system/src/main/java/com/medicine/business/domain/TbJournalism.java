@@ -1,23 +1,19 @@
 package com.medicine.business.domain;
 
-import java.util.Date;
-
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.medicine.common.annotation.Excel;
 import com.medicine.common.core.domain.BaseEntity;
-import lombok.Data;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.medicine.common.annotation.Excel;
+
+import java.util.Date;
 
 /**
  * 新闻对象 tb_journalism
  *
  * @author medicine
- * @date 2024-04-27
+ * @date 2024-05-26
  */
-@Data
-@TableName("tb_journalism")
 public class TbJournalism extends BaseEntity
 {
     private static final long serialVersionUID = 1L;
@@ -46,4 +42,75 @@ public class TbJournalism extends BaseEntity
     @Excel(name = "状态", readConverterExp = "0=正常,1=停用")
     private String status;
 
+    public void setId(Long id)
+    {
+        this.id = id;
+    }
+
+    public Long getId()
+    {
+        return id;
+    }
+    public void setType(String type)
+    {
+        this.type = type;
+    }
+
+    public String getType()
+    {
+        return type;
+    }
+    public void setContents(String contents)
+    {
+        this.contents = contents;
+    }
+
+    public String getContents()
+    {
+        return contents;
+    }
+    public void setHeat(Integer heat)
+    {
+        this.heat = heat;
+    }
+
+    public Integer getHeat()
+    {
+        return heat;
+    }
+    public void setReleaseTime(Date releaseTime)
+    {
+        this.releaseTime = releaseTime;
+    }
+
+    public Date getReleaseTime()
+    {
+        return releaseTime;
+    }
+    public void setStatus(String status)
+    {
+        this.status = status;
+    }
+
+    public String getStatus()
+    {
+        return status;
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
+            .append("id", getId())
+            .append("type", getType())
+            .append("contents", getContents())
+            .append("heat", getHeat())
+            .append("releaseTime", getReleaseTime())
+            .append("status", getStatus())
+            .append("createBy", getCreateBy())
+            .append("createTime", getCreateTime())
+            .append("updateBy", getUpdateBy())
+            .append("updateTime", getUpdateTime())
+            .append("remark", getRemark())
+            .toString();
+    }
 }

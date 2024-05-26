@@ -2,7 +2,7 @@ package com.medicine.common.exception;
 
 /**
  * 全局异常
- *
+ * 
  * @author medicine
  */
 public class GlobalException extends RuntimeException

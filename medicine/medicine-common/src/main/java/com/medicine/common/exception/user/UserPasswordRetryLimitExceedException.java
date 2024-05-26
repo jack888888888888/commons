@@ -2,7 +2,7 @@ package com.medicine.common.exception.user;
 
 /**
  * 用户错误最大次数异常类
- *
+ * 
  * @author medicine
  */
 public class UserPasswordRetryLimitExceedException extends UserException

@@ -2,7 +2,7 @@ package com.medicine.common.exception.user;
 
 /**
  * 验证码失效异常类
- *
+ * 
  * @author medicine
  */
 public class CaptchaExpireException extends UserException

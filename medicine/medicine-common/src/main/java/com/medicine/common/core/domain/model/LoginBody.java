@@ -2,7 +2,7 @@ package com.medicine.common.core.domain.model;
 
 /**
  * 用户登录对象
- *
+ * 
  * @author medicine
  */
 public class LoginBody

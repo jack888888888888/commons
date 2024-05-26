@@ -12,7 +12,7 @@ import com.medicine.common.core.domain.BaseEntity;
 
 /**
  * 角色表 sys_role
- *
+ * 
  * @author medicine
  */
 public class SysRole extends BaseEntity

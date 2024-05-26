@@ -1,8 +1,6 @@
 package com.medicine.framework.config;
 
 import java.util.concurrent.TimeUnit;
-
-import com.medicine.common.config.MedicineConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,12 +11,13 @@ import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import com.medicine.common.config.RuoYiConfig;
 import com.medicine.common.constant.Constants;
 import com.medicine.framework.interceptor.RepeatSubmitInterceptor;
 
 /**
  * 通用配置
- *
+ * 
  * @author medicine
  */
 @Configuration
@@ -32,7 +31,7 @@ public class ResourcesConfig implements WebMvcConfigurer
     {
         /** 本地文件上传路径 */
         registry.addResourceHandler(Constants.RESOURCE_PREFIX + "/**")
-                .addResourceLocations("file:" + MedicineConfig.getProfile() + "/");
+                .addResourceLocations("file:" + RuoYiConfig.getProfile() + "/");
 
         /** swagger配置 */
         registry.addResourceHandler("/swagger-ui/**")

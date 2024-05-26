@@ -11,7 +11,7 @@ import com.medicine.common.constant.Constants;
 
 /**
  * 资源文件配置加载
- *
+ * 
  * @author medicine
  */
 @Configuration

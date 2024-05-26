@@ -2,7 +2,7 @@ package com.medicine.common.exception.job;
 
 /**
  * 计划策略异常
- *
+ * 
  * @author medicine
  */
 public class TaskException extends Exception

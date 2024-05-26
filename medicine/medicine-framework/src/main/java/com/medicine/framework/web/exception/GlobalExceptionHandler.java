@@ -19,7 +19,7 @@ import com.medicine.common.utils.StringUtils;
 
 /**
  * 全局异常处理器
- *
+ * 
  * @author medicine
  */
 @RestControllerAdvice

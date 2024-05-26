@@ -10,7 +10,7 @@ import com.medicine.common.utils.StringUtils;
 
 /**
  * 业务表 gen_table
- *
+ * 
  * @author medicine
  */
 public class GenTable extends BaseEntity

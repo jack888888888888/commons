@@ -2,7 +2,7 @@ package com.medicine.common.exception;
 
 /**
  * 业务异常
- *
+ * 
  * @author medicine
  */
 public final class ServiceException extends RuntimeException
